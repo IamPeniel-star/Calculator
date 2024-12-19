@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Calculator</title>
+    <title>Modern Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -16,8 +16,7 @@
             border-radius: 1rem;
             padding: 2rem;
             max-width: 400px;
-            width: 90%;
-            margin: 2rem auto;
+            margin: 4rem auto;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
@@ -30,7 +29,6 @@
             padding: 1rem;
             text-align: right;
             margin-bottom: 1rem;
-            word-break: break-all;
         }
 
         .btn {
@@ -57,7 +55,7 @@
         }
 
         .btn-small {
-            width: 100%;
+            width: 25%;
         }
     </style>
 </head>
@@ -65,7 +63,7 @@
     <div class="calculator">
         <div class="screen" id="display">0</div>
 
-        <div class="grid grid-cols-4 gap-2">
+        <div class="grid grid-cols-4 gap-4">
             <button class="btn btn-small" onclick="appendValue('9')">9</button>
             <button class="btn btn-small" onclick="appendValue('8')">8</button>
             <button class="btn btn-small" onclick="appendValue('7')">7</button>
