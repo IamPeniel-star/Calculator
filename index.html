@@ -14,37 +14,31 @@
         .calculator {
             background: linear-gradient(135deg, #F56040, #FFDC80);
             border-radius: 1rem;
-            padding: 1rem; /* Reduced padding */
+            padding: 2rem;
             max-width: 400px;
-            width: 90%; 
-            height: auto;
-            max-height: 90vh; /* Restrict height for smaller screens */
-            margin: 4rem auto;
+            width: 90%;
+            margin: 2rem auto;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
         }
 
         .screen {
             background-color: #0A0A0A;
             color: #F5F5F5;
-            font-size: 1.5rem; /* Reduced font size */
+            font-size: 2rem;
             font-weight: bold;
             border-radius: 0.5rem;
-            padding: 0.75rem; /* Reduced padding */
+            padding: 1rem;
             text-align: right;
             margin-bottom: 1rem;
-            height: 3rem; /* Fixed height for smaller devices */
-            word-wrap: break-word; /* Break long numbers */
+            word-break: break-all;
         }
 
         .btn {
             background: #6C63FF;
             color: #F5F5F5;
-            font-size: 1.25rem; /* Reduced font size */
+            font-size: 1.5rem;
             font-weight: bold;
-            padding: 0.75rem; /* Reduced padding */
+            padding: 1rem;
             border-radius: 0.5rem;
             transition: all 0.2s ease-in-out;
         }
@@ -63,11 +57,7 @@
         }
 
         .btn-small {
-            width: 100%; /* Full width for small buttons */
-        }
-
-        .grid {
-            gap: 0.5rem; /* Reduced gap */
+            width: 100%;
         }
     </style>
 </head>
@@ -75,7 +65,7 @@
     <div class="calculator">
         <div class="screen" id="display">0</div>
 
-        <div class="grid grid-cols-4">
+        <div class="grid grid-cols-4 gap-2">
             <button class="btn btn-small" onclick="appendValue('9')">9</button>
             <button class="btn btn-small" onclick="appendValue('8')">8</button>
             <button class="btn btn-small" onclick="appendValue('7')">7</button>
